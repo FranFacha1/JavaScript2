@@ -30,18 +30,18 @@
 
 // Ejemplo tabla del 3
 
-const tabla = 3;
+// const tabla = 3;
 
-for (let i = 1; i <= 10; i++) {
-    console.log(tabla * i);
-}
+// for (let i = 1; i <= 10; i++) {
+//     console.log(tabla * i);
+// }
 
 // Ejemplos de sumatoria de todos los numeros
 
 let sumatoria = 0;
 
 for(let i = 0; i <= 5; i++) {
-    sumatoria = sumatoria * i;
+    sumatoria = sumatoria + i;
     console.log(sumatoria);
 }
 
@@ -49,3 +49,10 @@ for(let i = 0; i <= 5; i++) {
 // for(let i = 0; i >= 0; i++) {
 //     console.log("Capu puto");
 // }
+
+let entrada = prompt("Ingresar un dato");
+
+while (entrada != "esc".toUpperCase()) {
+    alert("El usuario ingreso " + entrada);
+    entrada = prompt("Ingresar otro dato");
+}
